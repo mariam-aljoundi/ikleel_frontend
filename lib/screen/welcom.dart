@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:animate_do/animate_do.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import 'login.dart';
+
 class WelcomePage extends StatelessWidget {
   const WelcomePage({super.key});
 
@@ -111,7 +113,17 @@ class WelcomePage extends StatelessWidget {
                           child: IconButton(
                             icon: const Icon(Icons.arrow_forward,
                                 color: Colors.white, size: 30),
-                            onPressed: () {},
+                            onPressed: () {
+
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => const LoginPage()),
+                              );
+
+
+
+
+                            },
                           ),
                         ),
                       ),
